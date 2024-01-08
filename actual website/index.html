@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        
+        <title>IanGage</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+
+            <link rel ="icon" type ="image/x-icon" href ="Ian Gage2.gif">
+    </head>
+
+    
+  
+    <body>
+        <header><div class = "header_links">
+        <a href ="index.html" class = "header_links">Home</a>
+        <a href ="Music and stuff.html" class = "header_links">Music and stuff</a> 
+        <a href ="About me.html" class = "header_links">About Me</a> 
+    </div></header>
+            <h1 class = "centered_pictures"><strong>Hello and welcome</strong></h1> 
+               <h2 class = "centered_pictures"><strong>I'm Ian Gage and this is my personal website</strong></h2>
+                        
+                        <div class="slideshow-container" >
+                        
+                        <div class="mySlides fade">
+                          <div class="numbertext">1 / 4</div>
+                          <img src="/Users/gageian/Downloads/IMG_20220929_135040550.jpg" style="width:100%">
+                          
+                        </div>
+                        
+                        <div class="mySlides fade">
+                          <div class="numbertext">2 / 4</div>
+                          <img src="/Users/gageian/Downloads/IMG_20230314_160746972_HDR.jpg" style="width:100%">
+                
+                        </div>
+                        
+                        <div class="mySlides fade">
+                          <div class="numbertext">3 / 4</div>
+                          <img src="/Users/gageian/Downloads/IMG_20230712_203242033.jpg" style="width:100%">
+                          
+                        </div>
+
+                        <div class="mySlides fade">
+                            <div class="numbertext">4 / 4</div>
+                            <img src="/Users/gageian/Downloads/Screenshot_20231129-082249-000.png" style="width:100%">
+                            
+                          </div>
+                        
+                        </div>
+                        <br>
+                        
+                        <div style="text-align:center">
+                          <span class="dot"></span> 
+                          <span class="dot"></span> 
+                          <span class="dot"></span> 
+                          <span class="dot"></span> 
+                        </div>
+                        
+                        <script>
+                        let slideIndex = 0;
+                        showSlides();
+                        
+                        function showSlides() {
+                          let i;
+                          let slides = document.getElementsByClassName("mySlides");
+                          let dots = document.getElementsByClassName("dot");
+                          for (i = 0; i < slides.length; i++) {
+                            slides[i].style.display = "none";  
+                          }
+                          slideIndex++;
+                          if (slideIndex > slides.length) {slideIndex = 1}    
+                          for (i = 0; i < dots.length; i++) {
+                            dots[i].className = dots[i].className.replace(" active", "");
+                          }
+                          slides[slideIndex-1].style.display = "block";  
+                          dots
+                          
+                          [slideIndex-1].className += " active";
+                          setTimeout(showSlides, 3500); // Change image every 4 seconds
+                        }
+                        </script>
+
+                    </div>
+
+    </body>
+</html>
